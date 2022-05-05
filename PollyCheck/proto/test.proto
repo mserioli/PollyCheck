@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+option csharp_namespace = "PollyCheck.Proto";
+
+package pollycheck;
+
+
+service TestService{
+  rpc Test(google.protobuf.Empty) returns (google.protobuf.Empty);
+}
